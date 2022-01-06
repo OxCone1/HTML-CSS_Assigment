@@ -1,0 +1,73 @@
+:root {
+    --1: #fcfbfe;
+    --2: #5643FD;
+    --3: #0C164F;
+    --4: #1d1135;
+    --5: #7659fe;
+    --6: #ba1e68;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    display: grid;
+    scroll-behavior: smooth;
+  }
+  body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background: white;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .header{
+    width: 100%;
+    height: fit-content;
+    background: var(--1);
+    border-bottom: 5px solid var(--6);
+    
+  }
+    .upper-welcome{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+  
+    .upper-welcome img{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        height: 96px;
+        width: auto;
+    }
+    .upper-welcome #menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .upper-welcome #pick {
+        font-family: 'Inter';
+        white-space: nowrap;
+        padding: 0px 20px 0px 20px;
+        font-size: 30px;
+        color: var(--6);
+        justify-items: center;
+    }
+        .upper-welcome #pick:hover{
+            font-size: 33px;
+            transition: 0.4s;
+        }
+body div.picture{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
